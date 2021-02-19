@@ -83,6 +83,10 @@ input[type="submit"]:hover, a > div:hover {
     background-color: aqua;
 }
 
+input[type="submit"]:active, a > div:active {
+    background-color: rgb(170, 252, 225);
+}
+
 div#button {
     box-sizing: border-box;
     padding: 4px;
@@ -98,4 +102,38 @@ form > p {
     color: red;
     display: none;
     transition: all 1s;
+}
+
+main > p {
+    color: aqua;
+    text-align: center;
+}
+
+div#options {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#options, a.option, form#envio-codigo {
+    display: flex;
+}
+
+a.option {
+    align-items: center;
+}
+
+a.option, form#envio-codigo {
+    flex-direction: column;
+}
+
+form#envio-codigo {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.black {
+    color: black;
 }
