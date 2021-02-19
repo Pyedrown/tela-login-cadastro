@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(150, 150, 150);
+}
+
+main {
+    margin: auto;
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+}
+
+main, h1#logo, input[type="submit"], a > div {
+    border-radius: 8px;
+}
+
+h1#logo {
+    text-align: center;
+    border: 2px solid aqua;
+    display: block;
+    margin: auto;
+    width: 200px;
+    color: aqua;
+}
+
+form {
+    margin-top: 50px;
+}
+
+input.texto {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    display: block;
+}
+
+input.texto:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-bottom: 3px solid aqua;
+}
+
+.texto {
+    width: 200px;
+    height: 30px;
+}
+
+input:focus, a:hover, input[type="submit"]:hover, a > div:hover {
+    transition: all 0.5s;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+}
+
+div#area-logar-cadastrar {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"], a > div {
+    width: auto;
+    height: 30px;
+    font-size: 20px;
+    border: 0;
+    background-color: rgb(0, 189, 189);
+    margin: 5px;
+    color: white;
+}
+
+input[type="submit"]:hover, a > div:hover {
+    background-color: aqua;
+}
+
+div#button {
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+div > p {
+    display: block;
+    width: auto;
+    margin: 0;
+}
+
+form > p {
+    color: red;
+    display: none;
+    transition: all 1s;
+}
